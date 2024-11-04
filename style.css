@@ -1,0 +1,183 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: cursive;
+
+
+}
+.bodyy{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgb(136, 8, 221),rgb(255, 214, 249));
+    
+}
+.box{
+    position: relative;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+@media (min-width:700px)
+{
+.box{
+    transform:translateY(-17%);
+        }
+.restart{
+font-size:0px;
+}
+}
+
+.block{
+    display:flex;
+    border:1px solid black;
+    background-color: rgba(255, 255, 255, 0.438);
+    width:30%;
+    margin:3px;
+    aspect-ratio:1/1;
+    border-radius: 20px;
+    box-shadow: 2px 4px 20px 5px rgba(36, 36, 36, 0.749);
+    align-items: center;
+    justify-content: center;
+    font-size:400%;
+    font-weight: 900;
+    color:rgba(251, 255, 0, 0.911);
+    transition:all .8s ease-in-out;
+    z-index:1;
+}
+.turn{
+    display:flex;
+    justify-content: center;
+    margin-bottom:20%;
+}
+#Xturn{
+    font-size:400%;
+    color:white;
+    width:20%;
+    height:100px;
+    margin-top:10%;
+    background:transparent;
+    border:0px;
+    text-shadow:
+     0px 0px 3px white,
+     0px 0px 3px white,
+     0px 0px 39px white,
+     0px 0px 9px white;
+     position: absolute;
+
+
+}
+#Oturn{
+    font-size:400%;
+    color:rgb(10, 0, 0,0.4);
+    width:20%;
+    height:100px;
+    font-weight: 900;
+    margin-top:10%;
+    background: transparent;
+    border:0px;
+     position: absolute;
+     left:63%
+
+}
+#top{
+
+    position:relative;
+    width:120px;
+    height:110px;
+}
+#bar{
+    position: absolute;
+    background:white;
+    width:50px; 
+    height:10px;
+    top:100px;
+    left:0px;
+    border-radius:5px;
+    box-shadow: 
+    0px 0px 3px white,
+    0px 0px 3px white,
+    0px 0px 39px white,
+    0px 0px 3px white;
+    transition:all .8s ease-in-out;
+}
+.svg{
+    position:absolute;
+    z-index: 1000;
+    pointer-events: none;
+    
+}
+#glow{
+    stroke: white;
+    stroke-width: 2px;
+    fill:white;
+    stroke-dashoffset: -10px;
+    stroke-dasharray:30px;
+    stroke-linecap: round;
+    filter:
+    drop-shadow(0px 0px 30px cyan)
+    drop-shadow(0px 0px 30px cyan)
+    drop-shadow(0px 0px 10px white);
+    visibility:hidden;    
+}
+.oo{
+    animation: foro 2s linear forwards;
+}
+.anime{
+    animation:animate 2s linear forwards;
+}
+@keyframes animate {
+    100%{stroke-dasharray: 0px;
+        filter:
+        drop-shadow(0px 0px 3px cyan)
+        drop-shadow(0px 0px 3px cyan)
+        drop-shadow(0px 0px 1px white);
+    }
+}
+@keyframes foro {
+    100%{stroke-dasharray: 0px;
+        filter:
+        drop-shadow(0px 0px 3px red)
+        drop-shadow(0px 0px 3px red)
+        drop-shadow(0px 0px 1px white);
+    }
+}
+.restart{
+    margin-top:15%;
+    margin-left:35%;
+    width:33%;
+    -webkit-aspect-ratio: 1/0.4;
+    -moz-aspect-ratio: 1/0.4;
+    -o-aspect-ratio: 1/0.4;
+    aspect-ratio: 1/0.4;
+    border:1px solid black;
+    border-radius: 30%;
+    background: rgba(189, 43, 226, 0.164);
+    font-size: 15px;
+    color:white;
+    filter:
+    drop-shadow(0px 0px 3px rgb(212, 0, 255))
+    drop-shadow(0px 0px 3px rgb(212, 0, 255))
+    drop-shadow(0px 0px 30px rgb(78, 0, 94))
+    drop-shadow(0px 0px 1px white);
+    position:absolute;
+    bottom:0;
+    margin-bottom: 5%;
+}
+.ress{
+animation:rere 1s linear forwards;
+}
+@keyframes rere {
+    50%{
+        transform:scale(1.1);
+        border: 1px solid white;
+    }
+    100%{
+        transform:scale(1);
+        border: 1px solid black;
+
+    }
+}

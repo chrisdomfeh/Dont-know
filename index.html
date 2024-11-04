@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="bodyy">
+      <div class="turn">
+        <div id="top">
+      <button id="Xturn" onclick="xo()">X</button>
+      <button id="Oturn" onclick="ox()">0</button>
+      <div id="bar"></div>
+
+      </div>
+      </div>
+      <div class="box"><svg class="svg" viewBox="0 0 100 100">
+        <path id="glow" d="M5 5 L95 95"/>
+        <path id="glow" d="M95 5 L5 95"/>
+        <path id="glow" d="M50 5 L50 95"/>
+        <path id="glow" d="M5 50 L95 50"/>
+        <path id="glow" d="M5 19 L95 19"/>
+        <path id="glow" d="M5 82 L95 82"/>
+        <path id="glow" d="M19 5 L19 95"/>
+        <path id="glow" d="M82 5 L82 95"/>
+      </svg>
+        <button class="block" id="block1" onclick="f1(this)"></button>
+        <button class="block" id="block2" onclick="f1(this)"></button>
+        <button class="block" id="block3" onclick="f1(this)"></button>
+        <button class="block" id="block4" onclick="f1(this)"></button>
+        <button class="block" id="block5" onclick="f1(this)"></button>
+        <button class="block" id="block6" onclick="f1(this)"></button>
+        <button class="block" id="block7" onclick="f1(this)"></button>
+        <button class="block" id="block8" onclick="f1(this)"></button>
+        <button class="block" id="block9" onclick="f1(this)"></button>
+      </div>
+      <button class="restart" onclick="restart()">RESTART</button>
+    </div>
+</body>
+</html>
